@@ -4,7 +4,7 @@ This package provides the minimal version of a reactive property class with clas
 It does not use the EMCAScript 5 Object features since they don't work in all browsers yet.
 
 ## Install with Meteorite
-Install the module with: `mrt add codeadventure-reactive-property`
+Install the module with: `mrt add ca-reactive-property`
 
 ## Documentation
 http://CodeAdventure.github.io/meteor-reactive-property
