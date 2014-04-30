@@ -24,6 +24,7 @@ continuously for all file changes.
 
 ## Release History
 0.1.0 - initial release
+0.1.1 - fixes issues with atmosphere releasing
 
 ## License
 Copyright (c) 2013 Code Adventure
