@@ -7,10 +7,7 @@ It does not use the EMCAScript 5 Object features since they don't work in all br
 Install the module with: `mrt add codeadventure-reactive-property`
 
 ## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
+http://CodeAdventure.github.io/meteor-reactive-property
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
