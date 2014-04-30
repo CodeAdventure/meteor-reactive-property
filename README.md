@@ -1,4 +1,4 @@
-# Reactive Property package by Code Adventure
+# Reactive Property for Meteor.js
 
 This package provides the minimal version of a reactive property class with classic getters and setters.
 It does not use the EMCAScript 5 Object features since they don't work in all browsers yet.
