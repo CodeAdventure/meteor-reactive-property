@@ -40,6 +40,30 @@
 
     });
 
+    describe("#destroy", function() {
+
+      it("Throws an error if trying to access a destroyed property", function() {
+
+        // SETUP
+        var testValue = {};
+        this.reactiveProperty.set(testValue);
+
+        // EXECUTE
+        this.reactiveProperty.destroy();
+
+        var This = this;
+
+        function tryToGetvalueOfDestroyedProperty() {
+          This.reactiveProperty.get();
+        }
+
+        // VERIFY
+        expect(tryToGetvalueOfDestroyedProperty).to.throw()
+
+      });
+
+    });
+
   });
 
 }());
