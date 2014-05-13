@@ -58,7 +58,7 @@
         }
 
         // VERIFY
-        expect(tryToGetvalueOfDestroyedProperty).to.throw()
+        expect(tryToGetvalueOfDestroyedProperty).to.throw();
 
       });
 

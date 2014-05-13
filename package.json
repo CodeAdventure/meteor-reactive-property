@@ -1,7 +1,7 @@
 {
   "name": "ca-meteor-reactive-property",
   "description": "Simple reactive property class with minimal getter and setter API",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/CodeAdventure/meteor-reactive-property",
   "author": {
     "name": "Code Adventure",

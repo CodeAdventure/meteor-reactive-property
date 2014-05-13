@@ -58,6 +58,7 @@
 
   Class('ReactiveProperty', {
 
+    _isDestroyed: false,
     _dependency: null,
     _value: null,
 
@@ -114,6 +115,9 @@
      * @memberof ReactiveProperty#
      */
     get: function() {
+
+      if(this._isDestroyed) throw new Error('Cannot get the value of a destroyed reactive property.');
+
       this._dependency.depend();
       return this._value;
     },
@@ -128,8 +132,23 @@
      * @memberof ReactiveProperty#
      */
     set: function(value) {
+
+      if(this._isDestroyed) throw new Error('Cannot set the value of a destroyed reactive property.');
+
       this._value = value;
       this._dependency.changed();
+    },
+
+    /**
+     * Sets the value and dependency to null (clean up)
+     *
+     * @returns {undefined}
+     * @memberof ReactiveProperty#
+     */
+    destroy: function() {
+      this._value = null;
+      this._dependency = null;
+      this._isDestroyed = true;
     }
 
   });
